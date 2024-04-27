@@ -1,5 +1,6 @@
 import "./Header.css";
 import logoImg from "../../assets/logo.png";
+import { HiLocationMarker } from "react-icons/hi";
 
 function Header() {
   return (
@@ -8,10 +9,14 @@ function Header() {
         <img src={logoImg} alt="logo" className="logo" />
         <div className="flexCenter h-menu">
           <a href="#">Home</a>
-          <a href="#">Properties</a>
           <a href="#">Services</a>
           <a href="#">About us</a>
           <a href="#">Contact</a>
+        </div>
+        <div className="flexCenter search-bar">
+          <HiLocationMarker color="var(--blue)" size={25} />
+          <input type="text" />
+          <button className="button">Search</button>
         </div>
       </div>
     </section>

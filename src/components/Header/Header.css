@@ -18,10 +18,33 @@
 }
 .h-menu > *:hover {
   cursor: pointer;
+  color: var(--orange);
 }
 .logo {
-  height: 2.5rem;
+  height: 4.5rem;
+  width: 6rem;
+  z-index: 99;
 }
 /* .h-icon {
   height: 2rem;
 } */
+.search-bar {
+  display: flex;
+  width: 20rem;
+  height: 2.6rem;
+  background-color: rgba(2, 2, 2, 0);
+  border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374);
+  padding: 0.5rem;
+}
+.search-bar > input {
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  background-color: rgba(59, 59, 59, 0.438);
+}
+.search-bar > button {
+  margin-left: 0.5rem;
+  height: 1.5rem;
+  line-height: 0.5rem;
+}
