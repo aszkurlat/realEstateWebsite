@@ -21,8 +21,8 @@
   color: var(--orange);
 }
 .logo {
-  height: 4.5rem;
-  width: 6rem;
+  height: 3rem;
+  width: 5rem;
   z-index: 99;
 }
 /* .h-icon {

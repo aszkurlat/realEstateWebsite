@@ -1,5 +1,5 @@
 import "./Header.css";
-import logoImg from "../../assets/logo.png";
+import logoImg from "/logoGold.png";
 import { HiLocationMarker } from "react-icons/hi";
 
 function Header() {
