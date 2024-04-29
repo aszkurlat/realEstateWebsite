@@ -3,11 +3,10 @@ import propertiesData from "../../utils/properties-data.json";
 
 function Properties() {
   return (
-    <section className="p-wrapper flexColCenter">
-      {/* <div className="paddings innerWidth p-container"> */}
-      <div className="flexColStart p-head innerWidth">
-        <span className="orangeText">Best Choices</span>
-        <span className="primaryText">Properties for sale</span>
+    <section className="p-wrapper flexColCenter" id="services">
+      <div className="flexColStart p-head innerWidth paddings">
+        <span className="orangeText">Current Listings</span>
+        <span className="primaryText">Properties for Sale</span>
       </div>
       <div className="p-container innerWidth">
         {propertiesData.map((property, i) => (
@@ -19,7 +18,7 @@ function Properties() {
               <span>{property.price}</span>
             </span>
 
-            <span className="primaryText">Costa May</span>
+            <span className="primaryText">{property.name}</span>
             <span className="secondaryText p-description">
               {property.detail}
             </span>

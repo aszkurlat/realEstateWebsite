@@ -1,38 +1,38 @@
 [
   {
-    "name": "Aliva Priva Jardin",
-    "price": "47,043",
-    "detail": "Jakarta Garden City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "name": "Kinkerstraat",
+    "price": "470,500",
+    "detail": "Cozy one-bedroom apartment, featuring original architectural features and excellent access to public transportation",
     "image": "/property1.jpg"
   },
   {
-    "name": "Asatti Garden City",
-    "price": "66,353",
-    "detail": "Pahlawan Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "name": "Prinsengracht",
+    "price": "660,900",
+    "detail": "Expansive four-bedroom apartment with a rooftop terrace, situated in a modern building with rich recreational and sports facilities",
     "image": "/property2.jpg"
   },
   {
-    "name": "Citralan Puri Serang",
-    "price": "35,853",
-    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "name": "Herengracht",
+    "price": "400,530",
+    "detail": "Charming three-bedroom apartment overlooking historic streets, located in a peaceful area with access to communal gardens",
     "image": "/property3.jpg"
   },
   {
-    "name": "Eleva Privata",
-    "price": "47,043",
-    "detail": "Eleva Privata City Street, Cakung. Pulo Gadung, Jakarta Timur, DKI Jakarta",
+    "name": "Singel",
+    "price": "780,000",
+    "detail": "Elegant four-bedroom apartment in a luxury condominium, with access to private parking",
     "image": "/property4.jpg"
   },
   {
-    "name": "Retun Junky",
-    "price": "66,353",
-    "detail": "Retun Junky Street XVII No.215, Cinangka, Sawangan, Depok, Jawa Barat",
+    "name": "Leidsestraat",
+    "price": "450,999",
+    "detail": "Spacious one-bedroom apartment in the heart of Amsterdam, close to the historic center",
     "image": "/property5.jpg"
   },
   {
-    "name": "Sehan Center",
-    "price": "35,853",
-    "detail": "Sehan Center Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "name": "Rozengracht",
+    "price": "539,700",
+    "detail": "Modern two-bedroom apartment with sleek finishes and a balcony, perfect for a single person or a couple",
     "image": "/property6.jpg"
   }
 ]

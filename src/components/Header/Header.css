@@ -1,6 +1,8 @@
 .h-wrapper {
   color: white;
+  padding-bottom: 2rem;
 }
+
 .h-container {
   justify-content: space-between;
   padding-top: 1rem;
@@ -15,6 +17,7 @@
 
 .h-menu > * {
   font-size: 1.2rem;
+  z-index: 99;
 }
 .h-menu > *:hover {
   cursor: pointer;
@@ -23,18 +26,15 @@
 .logo {
   height: 3rem;
   width: 5rem;
-  z-index: 99;
+  z-index: 1000;
 }
-/* .h-icon {
-  height: 2rem;
-} */
 .search-bar {
   display: flex;
   width: 20rem;
   height: 2.6rem;
   background-color: rgba(2, 2, 2, 0);
   border-radius: 5px;
-  border: 3px solid rgba(120, 120, 120, 0.374);
+  border: 2px solid rgba(120, 120, 120, 0.374);
   padding: 0.5rem;
 }
 .search-bar > input {
@@ -42,9 +42,27 @@
   outline: none;
   padding: 0.2rem;
   background-color: rgba(59, 59, 59, 0.438);
+  color: rgb(141, 186, 225);
 }
 .search-bar > button {
   margin-left: 0.5rem;
   height: 1.5rem;
   line-height: 0.5rem;
+}
+.h-top {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.h-top h1 {
+  margin-top: 0.5rem;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  font-weight: 600;
+  margin-right: 17rem;
+}
+.h-top > h2 {
+  padding: 1.7rem 0 0 0;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
