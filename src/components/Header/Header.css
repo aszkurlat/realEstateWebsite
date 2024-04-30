@@ -4,10 +4,9 @@
 }
 
 .h-container {
-  justify-content: space-between;
+  justify-content: space-between !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  gap: 3rem;
   color: var(--secondary);
 }
 .h-menu {
@@ -23,11 +22,12 @@
   cursor: pointer;
   color: var(--orange);
 }
-.logo {
-  height: 3rem;
-  width: 5rem;
-  z-index: 1000;
+.h-logo {
+  width: 6.5rem;
+  padding-left: 1rem;
+  z-index: 9999;
 }
+
 .search-bar {
   display: flex;
   width: 20rem;
@@ -65,4 +65,107 @@
   padding: 1.7rem 0 0 0;
   font-weight: 400;
   font-size: 1.1rem;
+}
+.h-menu {
+  gap: 2rem;
+}
+.h-menu > *:hover {
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 886px) {
+  .search-bar {
+    visibility: collapse;
+  }
+  .h-container {
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-container {
+    gap: 8rem;
+  }
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    gap: 1rem;
+    font-weight: 500;
+    flex-direction: column;
+    right: 2rem;
+    top: 3rem;
+    width: 38%;
+    background: rgba(214, 214, 214, 0.932);
+    display: flex;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    align-items: flex-start;
+    padding: 3rem 3rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    z-index: 99;
+  }
+  .h-menu > *:hover {
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .search-bar {
+    visibility: hidden;
+    height: 0;
+  }
+  .h-top {
+    padding-top: 0;
+  }
+  .h-top h1 {
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    margin-right: 14rem;
+  }
+  .h-top h2 {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 462px) {
+  .h-menu {
+    padding: 1.5rem 1rem;
+  }
+  .h-menu > * {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 438px) {
+  .h-container {
+    gap: 0 !important;
+  }
+}
+@media (max-width: 400px) {
+  .h-top h1 {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+    margin-right: 10rem;
+  }
+  .h-top h2 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 360px) {
+  .h-top h1 {
+    font-size: 1.5rem;
+    margin-right: 9rem;
+  }
+  .h-top h2 {
+    font-size: 0.6rem;
+  }
+  .h-logo {
+    padding-left: 0.8rem;
+  }
+}
+@media (max-width: 345px) {
+  .h-logo {
+    padding-left: 0.6rem;
+  }
 }

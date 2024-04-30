@@ -6,8 +6,7 @@
   overflow: hidden;
 }
 .about-left {
-  width: 80%;
-  padding: 2rem;
+  width: 100%;
 }
 .about-container > div {
   flex: 1;

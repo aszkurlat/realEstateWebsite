@@ -2,29 +2,64 @@ import "./Header.css";
 import logoImg from "/logoGold.png";
 import { motion } from "framer-motion";
 import { HiLocationMarker } from "react-icons/hi";
+import { BiMenu } from "react-icons/bi";
 import { Link } from "react-scroll";
+import { useState } from "react";
+import OutsideClickHandler from "react-outside-click-handler";
 
 function Header() {
+  const [menuOpened, setMenuOpened] = useState(false);
+  const getMenuStyles = (menuOpened) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { right: !menuOpened && "-100%" };
+    }
+  };
+
   return (
     <>
       <section className="h-wrapper" id="home">
         <div className="flexCenter h-container paddings innerWidth">
-          <Link className="logo" to="home" spy={true} smooth={true}>
-            <img src={logoImg} alt="logo" className="logoImg" />
+          <Link className="h-logo" to="home" spy={true} smooth={true}>
+            <img src={logoImg} alt="logo" className="logo" />
           </Link>
-          <div className="flexCenter h-menu">
-            <Link to="home" spy={true} smooth={true}>
-              Home
-            </Link>
-            <Link to="services" spy={true} smooth={true}>
-              Services
-            </Link>
-            <Link to="about" spy={true} smooth={true}>
-              About Us
-            </Link>
-            <Link to="contact" spy={true} smooth={true}>
-              Contact
-            </Link>
+
+          <OutsideClickHandler
+            onOutsideClick={() => {
+              setMenuOpened(false);
+            }}
+          >
+            <div
+              className="flexCenter h-menu"
+              style={getMenuStyles(menuOpened)}
+            >
+              <div onClick={() => setMenuOpened(false)}>
+                <Link to="home" spy={true} smooth={true}>
+                  Home
+                </Link>
+              </div>
+              <div onClick={() => setMenuOpened(false)}>
+                <Link to="services" spy={true} smooth={true}>
+                  Services
+                </Link>
+              </div>
+              <div onClick={() => setMenuOpened(false)}>
+                <Link to="about" spy={true} smooth={true}>
+                  About Us
+                </Link>
+              </div>
+              <div onClick={() => setMenuOpened(false)}>
+                <Link to="contact" spy={true} smooth={true}>
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </OutsideClickHandler>
+
+          <div className="menu-icon">
+            <BiMenu
+              size={30}
+              onClick={() => setMenuOpened((prevState) => !prevState)}
+            />
           </div>
           <div className="flexCenter search-bar">
             <HiLocationMarker

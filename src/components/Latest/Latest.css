@@ -53,10 +53,11 @@
   top: 0.5rem;
   right: 2.2rem;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 .l-buttons > button {
-  padding: 0.2rem 0.8rem;
-  font-size: 1.2rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 1rem;
   color: rgb(32, 32, 32);
   cursor: pointer;
   border: none;

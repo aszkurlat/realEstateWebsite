@@ -2,8 +2,8 @@
   background-color: #fff;
 }
 .f-container {
-  justify-content: space-between !important;
   border-top: 0.5px solid rgba(0, 0, 0, 0.148);
+  justify-content: space-between !important;
 }
 .f-left {
   gap: 1rem;
@@ -17,12 +17,16 @@
 .logo {
   cursor: pointer;
 }
+.logo {
+  width: 6rem;
+}
 @media (max-width: 768px) {
   .f-container {
-    justify-content: center;
+    justify-content: center !important;
   }
   .f-container > div {
-    align-items: center !important;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
   .f-right {
